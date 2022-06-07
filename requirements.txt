@@ -3,3 +3,4 @@ snowflake-connector-python==2.7.7
 numpy
 pandas
 pyyaml
+altair
