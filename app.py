@@ -37,6 +37,7 @@ where  usage_date >= dateadd(day, -{}, current_date())
 and    usage_date < current_date()
 group  by 1,2
 order  by 1,2
+Limit 5
 '''.format(option)
 
 df = run_query_pandas(sql)
