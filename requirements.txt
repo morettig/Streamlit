@@ -1,5 +1,5 @@
 # requirements.txt
-snowflake-connector-python==2.7.7
+snowflake-connector-python
 numpy
 pandas
 pyyaml
