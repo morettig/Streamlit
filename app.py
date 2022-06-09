@@ -44,11 +44,11 @@ df = run_query_pandas(sql)
 st.write(df)
 
 # Stacked Bar chart
-c = alt.Chart(df).mark_bar().encode(
-    alt.X('USAGE_DATE:T', axis=alt.Axis(format="%Y-%b-%d", labelOverlap=False, labelAngle=-45), bin=True, title="Usage Date"),
-    alt.Y('sum(TOTAL_BYTES)', title='Total GB',type='quantitative'),
-    color=alt.Color('DATABASE_NAME', type='nominal'),
-    order=alt.Order('DATABASE_NAME', sort='ascending')
-).properties(title='Total Storage Per Day by Database')
-
-st.altair_chart(c, use_container_width=True)
+#c = alt.Chart(df).mark_bar().encode(
+#    alt.X('USAGE_DATE:T', axis=alt.Axis(format="%Y-%b-%d", labelOverlap=False, labelAngle=-45), bin=True, title="Usage Date"),
+#    alt.Y('sum(TOTAL_BYTES)', title='Total GB',type='quantitative'),
+#    color=alt.Color('DATABASE_NAME', type='nominal'),
+#    order=alt.Order('DATABASE_NAME', sort='ascending')
+#).properties(title='Total Storage Per Day by Database')
+#
+#st.altair_chart(c, use_container_width=True)
