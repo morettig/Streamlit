@@ -40,8 +40,8 @@ order  by 1,2
 Limit 5
 '''.format(option)
 
-df = run_query_pandas(sql)
-st.write(df)
+#df = run_query_pandas(sql)
+#st.write(df)
 
 # Stacked Bar chart
 #c = alt.Chart(df).mark_bar().encode(
